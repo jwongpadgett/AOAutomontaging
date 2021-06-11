@@ -60,7 +60,7 @@ if strcmp(device_mode, 'multi_modal')
 
         % Then convert back to a number, before adding the trappings of our
         % file ids.
-        C(:,1) = cellfun(@(x) ['_' num2str( str2double(x),'%04.0f') '_'], C(:,1),'UniformOutput',false);
+        C(:,1) = cellfun(@(x) ['v' num2str( str2double(x),'%03.0f') '_'], C(:,1),'UniformOutput',false);
 
         %verify that the image id's line up for all modalities
         for n = 1:N
